@@ -1,0 +1,14 @@
+{% extends 'base/index.html' %}
+{% load static %}
+{% block content %}
+
+{% for task in tasks %}
+    <h2 style="margin-top: 10px;">{{task.title}}</h2>
+    <div class="task">  
+        <p class="one-task">{{task.description}}</p>
+    </div> <hr>
+{% endfor %}
+
+<a href="{% url 'index' %}"" class="task-links">Go Back</a> 
+
+{% endblock content %}

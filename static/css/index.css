@@ -1,0 +1,102 @@
+:root{
+    /* --dark : #282828; */
+    /* --light : #ff4040; */
+    --white : #F5F5DC;
+    --dark : #17a2b8;
+    --light : #20c997;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: var(--dark);
+    color: var(--light);
+}
+.heading{
+    font-size: 40px;
+    margin: 10vh;
+}
+.navbar ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+}
+.navbar li{
+    list-style-type: none;
+    padding: 1rem;
+}
+.navbar a{
+    text-decoration: none;
+}
+.logo{
+    flex: 1;
+    font-size: 1.5rem;
+    user-select: none;
+}
+.toggle i{
+    color: var(--dark);
+    display: none;
+}
+.nav-link a{
+    padding: 12px;
+    border-radius: 10%;
+    border: 2px solid var(--light);
+    color: var(--dark);
+}
+.nav-link a:hover{
+    background-color: var(--light);
+    color: black;
+}
+.todoContainer{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    padding: 10px 20px;
+    /* margin: 10px; */
+    
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 5px;
+}
+.one-task{
+    width: 50%;
+}
+.task-links{
+    text-decoration: none;
+    color: var(--light);
+    padding: 6px;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    margin: 10px;
+}
+@media only screen and (max-width:700px){
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+    .toggle i{
+        display: block;
+    }
+    .nav-link{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .active{
+        display: block;
+    }
+    .nav-link a{
+        border: none;
+    }
+}
+
+
